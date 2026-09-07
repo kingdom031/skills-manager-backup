@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "73d7fc19-fff8-4569-a0f7-e0533c711386",
+  "path": "open-kimi-ppt",
+  "path_key": "open-kimi-ppt",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

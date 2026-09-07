@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Deep-Dive Spec Sheet - Claude Code</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  html, body { margin: 0; padding: 0; background: #04060b; }
+  body::-webkit-scrollbar { width: 0; height: 0; }
+  .no-break { word-break: keep-all; overflow-wrap: anywhere; }
+  .glow-top {
+    background: radial-gradient(120% 60% at 50% 0%, rgba(56,189,248,0.18), rgba(168,85,247,0.10) 40%, transparent 70%);
+  }
+  .score-ring {
+    text-shadow: 0 0 18px currentColor;
+  }
+</style>
+</head>
+<body class="flex justify-center">
+  <!-- 画布：移动端竖屏 500px，暗黑极客渐变背景 -->
+  <main class="relative w-[500px] min-h-screen bg-gradient-to-b from-[#0b0c16] via-[#090b14] to-[#04060b] p-6 overflow-hidden">
+    <div class="glow-top absolute inset-x-0 top-0 h-64 pointer-events-none"></div>
+
+    <div class="relative z-10 space-y-4">
+      <!-- ===== 顶部 Header ===== -->
+      <header>
+        <div class="flex items-center justify-between">
+          <span class="rounded-md bg-indigo-500/15 border border-indigo-500/30 px-2 py-0.5 text-xs font-semibold text-indigo-300 no-break">
+            🔥 年度标杆拆解
+          </span>
+          <span class="rounded-md bg-emerald-500/15 border border-emerald-500/30 px-2 py-0.5 text-xs font-semibold text-emerald-300 no-break">
+            自主 Agentic 架构
+          </span>
+        </div>
+
+        <h1 class="mt-3 text-[26px] leading-tight font-bold text-white no-break">
+          Claude Code <span class="text-sky-400">深度架构剖析</span>
+        </h1>
+        <p class="mt-1 text-xs text-slate-500 font-light tracking-wide">
+          Anthropic 官方研究级评测 · 终端原生代码智能体
+        </p>
+      </header>
+
+      <!-- ===== 模块一：核心技术架构 / 实测基准数据 ===== -->
+      <section class="rounded-2xl border border-sky-500/30 bg-[#131728]/70 backdrop-blur-md p-4 shadow-[0_0_20px_-6px_rgba(56,189,248,0.25)]">
+        <div class="flex items-center gap-2 mb-2.5">
+          <span class="text-base">⚡</span>
+          <h2 class="text-sm font-bold text-white tracking-wide">核心技术架构与实测基准</h2>
+        </div>
+        <ul class="space-y-2 text-xs text-slate-300">
+          <li class="flex items-start gap-2">
+            <span class="text-sky-400 mt-0.5 font-bold">▪</span>
+            <span><span class="text-white font-semibold">Agentic Tool-Loop 引擎</span>：支持超长上下文会话与主动文件 AST 解析，自主规划多阶段重构链路。</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-sky-400 mt-0.5 font-bold">▪</span>
+            <span><span class="text-white font-semibold">SWE-bench Verified 基准</span>：以 <span class="text-sky-300 font-semibold">72.4%</span> 的自主解决率刷新行业记录，测试集耗时降低 42%。</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-sky-400 mt-0.5 font-bold">▪</span>
+            <span><span class="text-white font-semibold">Sub-Agent 并行树</span>：采用分层委派机制处理复杂任务，子智能体沙箱独立执行编译与验证。</span>
+          </li>
+        </ul>
+        <div class="mt-3 pt-2.5 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-500">
+          <span>底座：Claude 3.7 Sonnet / Opus 4</span>
+          <span>运行环境：Node.js / Native CLI</span>
+        </div>
+      </section>
+
+      <!-- ===== 模块二：特性与机制 / 输出能力 ===== -->
+      <section class="rounded-2xl border border-purple-500/30 bg-[#131728]/70 backdrop-blur-md p-4 shadow-[0_0_20px_-6px_rgba(168,85,247,0.25)]">
+        <div class="flex items-center gap-2 mb-2.5">
+          <span class="text-base">💎</span>
+          <h2 class="text-sm font-bold text-white tracking-wide">特性机制与自主输出能力</h2>
+        </div>
+
+        <div class="space-y-2">
+          <div class="rounded-xl bg-[#0e1222] p-3 border border-white/5">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-purple-300">01. 沉浸式终端交互流</span>
+              <span class="text-[10px] text-slate-500">CLI Native</span>
+            </div>
+            <p class="mt-1 text-xs text-slate-300 leading-relaxed">
+              无需离开 IDE 终端，直接在命令行接管 Git、Linter、测试套件与 Shell 指令执行。
+            </p>
+          </div>
+
+          <div class="rounded-xl bg-[#0e1222] p-3 border border-white/5">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-bold text-purple-300">02. 跨仓库全局语义检索</span>
+              <span class="text-[10px] text-slate-500">Global Ripgrep</span>
+            </div>
+            <p class="mt-1 text-xs text-slate-300 leading-relaxed">
+              自适应百万 Token 窗口，毫秒级跨数十万行大型工程定位类调用链与死代码。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 模块三：优劣对比 (Pros & Cons) ===== -->
+      <section class="grid grid-cols-2 gap-3">
+        <!-- 优势列 -->
+        <div class="rounded-2xl border border-emerald-500/40 bg-[#131728]/70 backdrop-blur-md p-3.5 shadow-[0_0_18px_-6px_rgba(52,211,153,0.25)]">
+          <div class="flex items-center gap-1.5 mb-2 text-emerald-400">
+            <span class="text-xs">✅</span>
+            <span class="text-xs font-bold">核心核心优势</span>
+          </div>
+          <ul class="space-y-1.5 text-[11px] text-slate-300">
+            <li>• 自主端到端编排能力极强</li>
+            <li>• 终端与 CI/CD 环境无缝衔接</li>
+            <li>• 复杂 Bug 定位命中率高达 95%</li>
+          </ul>
+        </div>
+
+        <!-- 局限列 -->
+        <div class="rounded-2xl border border-pink-500/40 bg-[#131728]/70 backdrop-blur-md p-3.5 shadow-[0_0_18px_-6px_rgba(244,63,94,0.25)]">
+          <div class="flex items-center gap-1.5 mb-2 text-pink-400">
+            <span class="text-xs">⚠️</span>
+            <span class="text-xs font-bold">局限与注意</span>
+          </div>
+          <ul class="space-y-1.5 text-[11px] text-slate-300">
+            <li>• Token 消耗速率较快</li>
+            <li>• 依赖高质量 API 授权环境</li>
+            <li>• 需建立清晰的项目测试套件</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== 底部 Footer ===== -->
+      <footer class="mt-4 pt-3 border-t border-white/5 text-center">
+        <p class="text-xs text-slate-400 no-break">
+          💡 定位总结：适合中高级开发者与架构师处理高难度工程级代码演进与重构。
+        </p>
+        <p class="mt-1 text-[10px] text-slate-600 no-break">
+          评测数据源自 Anthropic 官方技术白皮书 · 仅供技术架构选型参考
+        </p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "6c0abe7a-faf5-4abe-8ae3-2c5a1cc7a125",
+  "path": "reverse-skill",
+  "path_key": "reverse-skill",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

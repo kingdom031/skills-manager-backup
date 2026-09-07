@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>2026 Code Agent 调研榜</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  html, body { margin: 0; padding: 0; background: #04060b; }
+  /* 隐藏滚动条但保留滚动 */
+  body::-webkit-scrollbar { width: 0; height: 0; }
+  .no-break { word-break: keep-all; overflow-wrap: anywhere; }
+  /* 顶部柔和辉光 */
+  .glow-top {
+    background: radial-gradient(120% 60% at 50% 0%, rgba(56,189,248,0.18), rgba(168,85,247,0.10) 40%, transparent 70%);
+  }
+  .score-ring {
+    text-shadow: 0 0 18px currentColor;
+  }
+</style>
+</head>
+<body class="flex justify-center">
+  <!-- 画布：移动端竖屏 500px，暗黑极客渐变背景 -->
+  <main class="relative w-[500px] min-h-screen bg-gradient-to-b from-[#0b0c16] via-[#090b14] to-[#04060b] p-6 overflow-hidden">
+    <div class="glow-top absolute inset-x-0 top-0 h-64 pointer-events-none"></div>
+
+    <div class="relative z-10">
+      <!-- ===== 顶部 Header ===== -->
+      <header class="mb-5">
+        <div class="flex items-center justify-between">
+          <span class="rounded-md bg-indigo-500/15 border border-indigo-500/30 px-2 py-0.5 text-xs font-semibold text-indigo-300 no-break">
+            全球 Code Agent 调研
+          </span>
+          <span class="rounded-md bg-cyan-500/15 border border-cyan-500/30 px-2 py-0.5 text-xs font-semibold text-cyan-300 no-break">
+            编程智能体
+          </span>
+        </div>
+
+        <h1 class="mt-3 text-[28px] leading-tight font-bold text-white no-break">
+          2026 AI 编程智能体<span class="text-cyan-400">横评榜</span>
+        </h1>
+        <p class="mt-1 text-xs text-slate-500 font-light tracking-wide">
+          2026 年 9 月 · 端到端实测 · 开发者口碑加权
+        </p>
+      </header>
+
+      <!-- ===== 横评卡片流 (Cards Stream) ===== -->
+
+      <!-- #1 黄 -->
+      <article class="mb-3 rounded-2xl border border-yellow-500/40 bg-[#131728]/70 backdrop-blur-md p-4 shadow-[0_0_22px_-6px_rgba(250,204,21,0.35)]">
+        <div class="flex gap-3">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="rounded-md bg-yellow-500/20 border border-yellow-500/40 px-1.5 py-0.5 text-[11px] font-bold text-yellow-300 no-break">#1</span>
+              <h2 class="text-base font-bold text-white no-break truncate">Claude Code</h2>
+            </div>
+            <p class="mt-0.5 text-[11px] text-slate-500 no-break">Anthropic · 自主 Agentic CLI</p>
+            <p class="mt-2 text-xs text-slate-300 no-break">亮点：<span class="text-white font-semibold">终端原生</span> · 长上下文 · 多文件自主重构</p>
+            <p class="mt-1 text-[11px] text-slate-500 no-break">底座：Claude Opus / Sonnet 4 · 场景：大型仓库维护</p>
+          </div>
+          <div class="w-[78px] shrink-0 text-center border-l border-white/5 pl-3">
+            <div class="text-2xl font-bold text-yellow-400 score-ring">9.6</div>
+            <div class="text-[10px] text-slate-500 no-break">综合评分</div>
+            <div class="mt-2 text-xs text-slate-300 no-break">★ 45.2k</div>
+            <div class="text-[10px] text-slate-500 no-break">⑂ 3.1k</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- #2 粉 -->
+      <article class="mb-3 rounded-2xl border border-pink-500/40 bg-[#131728]/70 backdrop-blur-md p-4 shadow-[0_0_22px_-6px_rgba(244,63,94,0.35)]">
+        <div class="flex gap-3">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="rounded-md bg-pink-500/20 border border-pink-500/40 px-1.5 py-0.5 text-[11px] font-bold text-pink-300 no-break">#2</span>
+              <h2 class="text-base font-bold text-white no-break truncate">Cursor</h2>
+            </div>
+            <p class="mt-0.5 text-[11px] text-slate-500 no-break">Anysphere · AI-first 编辑器</p>
+            <p class="mt-2 text-xs text-slate-300 no-break">亮点：<span class="text-white font-semibold">丝滑 IDE</span> · Tab 预测 · 多模型路由</p>
+            <p class="mt-1 text-[11px] text-slate-500 no-break">底座：GPT / Claude / 自研 · 场景：日常编码提效</p>
+          </div>
+          <div class="w-[78px] shrink-0 text-center border-l border-white/5 pl-3">
+            <div class="text-2xl font-bold text-pink-400 score-ring">9.3</div>
+            <div class="text-[10px] text-slate-500 no-break">综合评分</div>
+            <div class="mt-2 text-xs text-slate-300 no-break">★ 12.8k</div>
+            <div class="text-[10px] text-slate-500 no-break">⑂ 1.9k</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- #3 蓝 -->
+      <article class="mb-3 rounded-2xl border border-sky-500/40 bg-[#131728]/70 backdrop-blur-md p-4 shadow-[0_0_22px_-6px_rgba(56,189,248,0.35)]">
+        <div class="flex gap-3">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="rounded-md bg-sky-500/20 border border-sky-500/40 px-1.5 py-0.5 text-[11px] font-bold text-sky-300 no-break">#3</span>
+              <h2 class="text-base font-bold text-white no-break truncate">GitHub Copilot</h2>
+            </div>
+            <p class="mt-0.5 text-[11px] text-slate-500 no-break">Microsoft · IDE 智能副驾</p>
+            <p class="mt-2 text-xs text-slate-300 no-break">亮点：<span class="text-white font-semibold">全语言</span> · 深度集成 · 企业合规</p>
+            <p class="mt-1 text-[11px] text-slate-500 no-break">底座：GPT-4o / Claude · 场景：企业研发管线</p>
+          </div>
+          <div class="w-[78px] shrink-0 text-center border-l border-white/5 pl-3">
+            <div class="text-2xl font-bold text-sky-400 score-ring">9.0</div>
+            <div class="text-[10px] text-slate-500 no-break">综合评分</div>
+            <div class="mt-2 text-xs text-slate-300 no-break">★ 38.4k</div>
+            <div class="text-[10px] text-slate-500 no-break">⑂ 4.2k</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- #4 紫 -->
+      <article class="mb-3 rounded-2xl border border-purple-500/40 bg-[#131728]/70 backdrop-blur-md p-4 shadow-[0_0_22px_-6px_rgba(168,85,247,0.35)]">
+        <div class="flex gap-3">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="rounded-md bg-purple-500/20 border border-purple-500/40 px-1.5 py-0.5 text-[11px] font-bold text-purple-300 no-break">#4</span>
+              <h2 class="text-base font-bold text-white no-break truncate">Codex CLI</h2>
+            </div>
+            <p class="mt-0.5 text-[11px] text-slate-500 no-break">OpenAI · 云端 Agent CLI</p>
+            <p class="mt-2 text-xs text-slate-300 no-break">亮点：<span class="text-white font-semibold">沙箱执行</span> · 多模态 · 云端并行</p>
+            <p class="mt-1 text-[11px] text-slate-500 no-break">底座：GPT-5 / o4 · 场景：自动化任务流</p>
+          </div>
+          <div class="w-[78px] shrink-0 text-center border-l border-white/5 pl-3">
+            <div class="text-2xl font-bold text-purple-400 score-ring">8.8</div>
+            <div class="text-[10px] text-slate-500 no-break">综合评分</div>
+            <div class="mt-2 text-xs text-slate-300 no-break">★ 24.1k</div>
+            <div class="text-[10px] text-slate-500 no-break">⑂ 2.0k</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- #5 黄 -->
+      <article class="mb-3 rounded-2xl border border-yellow-500/40 bg-[#131728]/70 backdrop-blur-md p-4 shadow-[0_0_22px_-6px_rgba(250,204,21,0.35)]">
+        <div class="flex gap-3">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="rounded-md bg-yellow-500/20 border border-yellow-500/40 px-1.5 py-0.5 text-[11px] font-bold text-yellow-300 no-break">#5</span>
+              <h2 class="text-base font-bold text-white no-break truncate">Gemini CLI</h2>
+            </div>
+            <p class="mt-0.5 text-[11px] text-slate-500 no-break">Google · 百万上下文 CLI</p>
+            <p class="mt-2 text-xs text-slate-300 no-break">亮点：<span class="text-white font-semibold">1M Context</span> · 免费额度 · 工具链</p>
+            <p class="mt-1 text-[11px] text-slate-500 no-break">底座：Gemini 2.5 Pro · 场景：超大代码库</p>
+          </div>
+          <div class="w-[78px] shrink-0 text-center border-l border-white/5 pl-3">
+            <div class="text-2xl font-bold text-yellow-400 score-ring">8.6</div>
+            <div class="text-[10px] text-slate-500 no-break">综合评分</div>
+            <div class="mt-2 text-xs text-slate-300 no-break">★ 31.5k</div>
+            <div class="text-[10px] text-slate-500 no-break">⑂ 3.4k</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- #6 粉 -->
+      <article class="mb-3 rounded-2xl border border-pink-500/40 bg-[#131728]/70 backdrop-blur-md p-4 shadow-[0_0_22px_-6px_rgba(244,63,94,0.35)]">
+        <div class="flex gap-3">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="rounded-md bg-pink-500/20 border border-pink-500/40 px-1.5 py-0.5 text-[11px] font-bold text-pink-300 no-break">#6</span>
+              <h2 class="text-base font-bold text-white no-break truncate">Windsurf</h2>
+            </div>
+            <p class="mt-0.5 text-[11px] text-slate-500 no-break">Codeium · 流速 AI 编辑器</p>
+            <p class="mt-2 text-xs text-slate-300 no-break">亮点：<span class="text-white font-semibold">Cascade</span> · 实时感知 · 轻量丝滑</p>
+            <p class="mt-1 text-[11px] text-slate-500 no-break">底座：Codeium 自研 · 场景：流畅编程体验</p>
+          </div>
+          <div class="w-[78px] shrink-0 text-center border-l border-white/5 pl-3">
+            <div class="text-2xl font-bold text-pink-400 score-ring">8.7</div>
+            <div class="text-[10px] text-slate-500 no-break">综合评分</div>
+            <div class="mt-2 text-xs text-slate-300 no-break">★ 9.6k</div>
+            <div class="text-[10px] text-slate-500 no-break">⑂ 1.1k</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- #7 蓝 -->
+      <article class="mb-3 rounded-2xl border border-sky-500/40 bg-[#131728]/70 backdrop-blur-md p-4 shadow-[0_0_22px_-6px_rgba(56,189,248,0.35)]">
+        <div class="flex gap-3">
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2">
+              <span class="rounded-md bg-sky-500/20 border border-sky-500/40 px-1.5 py-0.5 text-[11px] font-bold text-sky-300 no-break">#7</span>
+              <h2 class="text-base font-bold text-white no-break truncate">Cline</h2>
+            </div>
+            <p class="mt-0.5 text-[11px] text-slate-500 no-break">OSS · VS Code 开源 Agent</p>
+            <p class="mt-2 text-xs text-slate-300 no-break">亮点：<span class="text-white font-semibold">完全开源</span> · 可本地化 · 透明可控</p>
+            <p class="mt-1 text-[11px] text-slate-500 no-break">底座：任意 LLM · 场景：私有化部署</p>
+          </div>
+          <div class="w-[78px] shrink-0 text-center border-l border-white/5 pl-3">
+            <div class="text-2xl font-bold text-sky-400 score-ring">8.5</div>
+            <div class="text-[10px] text-slate-500 no-break">综合评分</div>
+            <div class="mt-2 text-xs text-slate-300 no-break">★ 38.9k</div>
+            <div class="text-[10px] text-slate-500 no-break">⑂ 4.6k</div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ===== 底部 Footer ===== -->
+      <footer class="mt-4 pt-4 border-t border-white/5 text-center">
+        <p class="text-xs text-slate-400 no-break">
+          💡 选型建议：端到端自主编排选 <span class="text-white font-semibold">Claude Code</span>；IDE 丝滑体验选 <span class="text-white font-semibold">Cursor</span>；企业生态首选 <span class="text-white font-semibold">Copilot</span>。
+        </p>
+        <p class="mt-2 text-[10px] text-slate-600 no-break">
+          ★/⑂ 为开发者热度估算，仅供横向参考，非官方 GitHub 数据 · 截图生成于 2026-09
+        </p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>

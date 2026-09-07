@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "d4f3c7b7-3029-4bb8-9909-0999106d52a2",
+  "path": "dark-geek-infographic",
+  "path_key": "dark-geek-infographic",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}

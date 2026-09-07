@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "skill_id": "8d78468a-1784-4154-b2d2-feb442984d70",
+  "path": "gov-document",
+  "path_key": "gov-document",
+  "enabled": true,
+  "tags": [],
+  "source": {
+    "type": "local",
+    "ref": null,
+    "subpath": null,
+    "branch": null
+  }
+}
